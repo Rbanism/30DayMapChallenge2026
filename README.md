@@ -2,7 +2,6 @@
 
 The [#30DayMapChallenge](https://30daymapchallenge.com/) is an event which gathers mappers on social media each November since 2019. The challenge is to produce a map for each of the 30 days of November, following the set of themes / topics / constraints set by the organisers.
 
-https://30daymapchallenge.com/imgs/30dmc_2026.png
 
 <img src="https://30daymapchallenge.com/imgs/30dmc_2026.png" alt="image" width="960" height="540"/>
 
