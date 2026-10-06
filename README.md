@@ -26,7 +26,14 @@ See an example [here](https://github.com/Rbanism/30DayMapChallenge2025/tree/main
 
 3. **Send the zipped folder to [rbanism@tudelft.nl](mailto:rbanism@tudelft.nl)** or 2) **send a Pull Request on [GitHub](https://github.com/Rbanism/30DayMapChallenge2024)** *at least one day before the date of your topic.*
 
-\*\*If you want your author credits to be shared on our social media, please share your instagram/BlueSky handle with the submission! If via email, simply add it to the mail, if via GitHub, please add a .txt file within the folder.\*
+
+### Publication and sharing 
+**If you want your author credits to be shared on our social media, please share your instagram/BlueSky handle with the submission! If via email, simply add it to the mail, if via GitHub, please add a .txt file within the folder.**
+
+Submissions will be featured on Rbanism social media and might also be included in other types of publications in the future, always with full author credit.
+
+### AI Use
+One of the main purposes of this challenge is to learn and enhance our R coding and visualization skills. We would like to encourage you to write your own code and refrain from relying on AI-generated code (*"vibe coding"*). 
 
 ## #30DayMapChallenge on social media
 
@@ -34,17 +41,17 @@ On BlueSky - The Challenge [feed](https://bsky.app/profile/did:plc:bjm7fq6jgotow
 
 On Instagram - [\@Rbanism\_](https://www.instagram.com/rbanism_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==)
 
+On LinkedIn - [Rbanism](https://www.linkedin.com/company/rbanism/)
+
 ## Resources
 - [Geospatial Data Carpentry for Urbanism](https://carpentries-incubator.github.io/r-geospatial-urban/) provides a comprehensive guide on how you can work with raster and vector data in R.
-- **Refactoring session**:** Thursday, 27th of November 2025**, 12:30-14:30 (TUD Library, Blue Room). Register **[here](https://www.eventbrite.nl/e/nice-and-clean-refactoring-code-from-the-30daymapchallenge-tickets-1760050531519?aff=oddtdtcreator)**
-- Miro board for providing **[map peer-review](https://miro.com/app/board/uXjVJ0UihFo=/)**
 
 ### Our logo
 
 ![](https://rbanism.org/assets/imgs/about/vi_l.jpg)
 
 You can also find the logo files here:  
-[Rbanism 30DayMapChallenge 2025 — Logo folder](https://github.com/Rbanism/30DayMapChallenge2025/tree/main/resources/logo)
+[Rbanism 30DayMapChallenge 2026 — Logo folder](https://github.com/Rbanism/30DayMapChallenge2026/tree/main/resources/logo)
 
 ### Our colour Hex codes
 
