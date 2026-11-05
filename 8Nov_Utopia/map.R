@@ -19,6 +19,12 @@ library(dplyr)
 # download data
 options(timeout = max(500, getOption("timeout")))
 
+if (!file.exists("8Nov_Utopia/raw/LDEM_80S_80MPP_ADJ.TIF") ) 
+  { download.file( url = "https://pgda.gsfc.nasa.gov/data/LOLA_20mpp/LDEM_80S_80MPP_ADJ.TIF",
+              destfile = "8Nov_Utopia/raw/LDEM_80S_80MPP_ADJ.TIF",
+              mode = "wb")
+              }
+
 download.file( url = "https://pgda.gsfc.nasa.gov/data/LOLA_20mpp/LDEM_80S_80MPP_ADJ.TIF",
               destfile = "8Nov_Utopia/raw/LDEM_80S_80MPP_ADJ.TIF",
               mode = "wb")
