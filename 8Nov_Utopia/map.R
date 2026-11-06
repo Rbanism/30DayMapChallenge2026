@@ -39,10 +39,16 @@ minmax(elevation_lspole, compute = TRUE)
 
 plot(elevation_lspole)
 
-# visualization
+## visualization
 
 elevation_lspole_low <- aggregate(elevation_lspole, fact = c(38, 4), fun="mean")
 
 elevation_lspole_low
 
 plot(elevation_lspole_low)
+
+# table 
+
+elevation_lspole_df <- as.data.frame(elevation_lspole_low, xy = TRUE)
+
+elevation_lspole_df <- rename(elevation_lspole_df, elevation = LDEM_80S_80MPP_ADJ)
