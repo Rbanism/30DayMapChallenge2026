@@ -52,3 +52,9 @@ plot(elevation_lspole_low)
 elevation_lspole_df <- as.data.frame(elevation_lspole_low, xy = TRUE)
 
 elevation_lspole_df <- rename(elevation_lspole_df, elevation = LDEM_80S_80MPP_ADJ)
+
+# circle
+
+radius <- 270000
+
+elevation_lspole_circle <- filter(elevation_lspole_df, sqrt(x^2 + y^2) <= radius)
