@@ -41,3 +41,8 @@ plot(elevation_lspole)
 
 # visualization
 
+elevation_lspole_low <- aggregate(elevation_lspole, fact = 38)
+
+elevation_lspole_low
+
+plot(elevation_lspole_low)
