@@ -29,3 +29,15 @@ download.file( url = "https://pgda.gsfc.nasa.gov/data/LOLA_20mpp/LDEM_80S_80MPP_
               destfile = "8Nov_Utopia/raw/LDEM_80S_80MPP_ADJ.TIF",
               mode = "wb")
 
+# create raster grid + heights
+
+elevation_lspole <- rast("8Nov_Utopia/raw/LDEM_80S_80MPP_ADJ.TIF")
+
+elevation_lspole
+
+minmax(elevation_lspole, compute = TRUE)
+
+plot(elevation_lspole)
+
+# visualization
+
