@@ -10,6 +10,7 @@
 
 # download packages
 install.packages(c("terra", "ggplot2", "dplyr", "png"))
+install.packages("ggnewscale")
 
 # load installed packages
 library(terra)
@@ -39,7 +40,7 @@ minmax(elevation_lspole, compute = TRUE)
 
 plot(elevation_lspole)
 
-## visualization
+
 
 elevation_lspole_low <- aggregate(elevation_lspole, fact = c(38, 4), fun="mean")
 
@@ -47,17 +48,18 @@ elevation_lspole_low
 
 plot(elevation_lspole_low)
 
-# table 
+# table V1
 
 elevation_lspole_df <- as.data.frame(elevation_lspole_low, xy = TRUE)
 
 elevation_lspole_df <- rename(elevation_lspole_df, elevation = LDEM_80S_80MPP_ADJ)
 
-# circle
+# circle V1
 
 radius <- 270000
 
 elevation_lspole_circle <- filter(elevation_lspole_df, sqrt(x^2 + y^2) <= radius)
+
 
 # V2 raster: create raster grid + heights
 
@@ -69,7 +71,7 @@ minmax(elevation_lspole, compute = TRUE)
 
 plot(elevation_lspole)
 
-## visualization
+
 
 elevation_lspole_raster <- aggregate(elevation_lspole, fact = 8, fun = "mean")
 
@@ -77,14 +79,31 @@ elevation_lspole_raster
 
 plot(elevation_lspole_raster)
 
-# table 
+# table V2
 
 elevation_raster_df <- as.data.frame(elevation_lspole_raster, xy = TRUE)
 
 elevation_raster_df <- rename(elevation_raster_df, elevation = LDEM_80S_80MPP_ADJ)
 
-# circle
+# circle V2
 
 radius <- 270000
 
 elevation_raster_circle <- filter(elevation_raster_df, sqrt(x^2 + y^2) <= radius)
+
+# plot + visualize V2
+map <- ggplot () +
+  geom_raster(data = elevation_raster_df, aes(x = x, y = y, fill = elevation)) + 
+  scale_fill_gradient(low = "grey20", high = "white") + 
+  coord_equal()
+
+map
+
+# add circle on top
+
+map_circle <- map + 
+  new_scale_fill() +
+  geom_raster(data = elevation_raster_circle, aes(x = x, y = y, fill = elevation)) + 
+  scale_fill_gradient2(low = "#907768", mid = "#B5A295", high = "#394045", midpoint = 0) 
+
+
