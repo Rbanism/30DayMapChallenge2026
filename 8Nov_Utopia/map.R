@@ -112,7 +112,7 @@ map <- ggplot () +
         axis.ticks = element_line(colour = "white"), 
         axis.title.x = element_text(hjust = 0), 
         plot.background = element_rect(fill = "black", colour = NA), 
-        text = element_text(colour = "white"),
+        text = element_text(colour = "white", family = "menlo"),
         axis.text = element_text(colour = "white")
         ) +
   labs(x = "Distance from pole (km)", y = NULL) + 
@@ -156,6 +156,14 @@ map_circle <- map +
   geom_hline(yintercept = 0, colour = "white", linewidth = 0.2) +
   geom_path(data = points_table, aes(x=x, y=y), colour = "white", linewidth = 0.2) +
   geom_path(data = points_table2, aes(x=x, y=y), colour = "white", linewidth = 0.2, alpha = 0.5) +
-  geom_path(data = points_table_pole, aes(x=x, y=y), colour = "white", linewidth = 2)
+  geom_path(data = points_table_pole, aes(x=x, y=y), colour = "white", linewidth = 2) +
+  labs(
+    title = "The Lunar South Pole",
+    subtitle = "Day 8: Utopia",
+    caption = "Roxanne Vuijk\n NASA LRO/LOLA\nBarker et al. 2023\n #30DayMapChallenge2026"
+    ) +
+  theme(
+    plot.title = element_text(face = "bold"), 
+    plot.caption.position = "plot",)
 
 map_circle
