@@ -31,38 +31,9 @@ download.file( url = "https://pgda.gsfc.nasa.gov/data/LOLA_20mpp/LDEM_80S_80MPP_
               destfile = "8Nov_Utopia/raw/LDEM_80S_80MPP_ADJ.TIF",
               mode = "wb")
 
-# V1 lines: create raster grid + heights
-
-elevation_lspole <- rast("8Nov_Utopia/raw/LDEM_80S_80MPP_ADJ.TIF")
-
-elevation_lspole
-
-minmax(elevation_lspole, compute = TRUE)
-
-plot(elevation_lspole)
 
 
-
-elevation_lspole_low <- aggregate(elevation_lspole, fact = c(38, 4), fun="mean")
-
-elevation_lspole_low
-
-plot(elevation_lspole_low)
-
-# table V1
-
-elevation_lspole_df <- as.data.frame(elevation_lspole_low, xy = TRUE)
-
-elevation_lspole_df <- rename(elevation_lspole_df, elevation = LDEM_80S_80MPP_ADJ)
-
-# circle V1
-
-radius <- 270000
-
-elevation_lspole_circle <- filter(elevation_lspole_df, sqrt(x^2 + y^2) <= radius)
-
-
-# V2 raster: create raster grid + heights
+# raster: create raster grid + heights
 
 elevation_lspole <- rast("8Nov_Utopia/raw/LDEM_80S_80MPP_ADJ.TIF")
 
@@ -80,13 +51,13 @@ elevation_lspole_raster
 
 plot(elevation_lspole_raster)
 
-# table V2
+# table 
 
 elevation_raster_df <- as.data.frame(elevation_lspole_raster, xy = TRUE)
 
 elevation_raster_df <- rename(elevation_raster_df, elevation = LDEM_80S_80MPP_ADJ)
 
-# circle V2
+# circle 
 
 radius <- 270000
 
