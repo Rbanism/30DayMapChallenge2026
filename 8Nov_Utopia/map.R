@@ -16,6 +16,7 @@ install.packages("ggnewscale")
 library(terra)
 library(ggplot2)
 library(dplyr)
+library(png)
 
 # download data
 options(timeout = max(500, getOption("timeout")))
@@ -91,7 +92,8 @@ radius <- 270000
 
 elevation_raster_circle <- filter(elevation_raster_df, sqrt(x^2 + y^2) <= radius)
 
-# plot + visualize V2
+# square background map
+
 map <- ggplot () +
   geom_raster(data = elevation_raster_df, aes(x = x, y = y, fill = elevation)) + 
   scale_fill_gradient(low = "black", high = "grey40", guide = "none") + 
@@ -116,11 +118,13 @@ map <- ggplot () +
         axis.text = element_text(colour = "white")
         ) +
   labs(x = "Distance from pole (km)", y = NULL) + 
-  coord_equal()
+  coord_equal(clip = "off")
 
 map
 
-# add circle on top
+# add circular map on top
+
+logo <- readPNG("resources/logo/Logo_Rbanism_ White.png")
 
 angle <- seq(0, 2 * pi, length.out = 360)
 
@@ -147,7 +151,7 @@ map_circle <- map +
     mid = "#A5AEB7", 
     high = "#C8E0F4", 
     midpoint = 0, 
-    name = "Elevation (m)\nrelative to mean radius", 
+    name = "Elevation (m)", 
     breaks = seq(-7200, 7200, 7200), 
     limits = c(-7200, 7200)) +
   geom_vline(xintercept = seq(-300000, 300000, 100000), colour = "white", linewidth = 0.2, alpha = 0.5) +
@@ -157,13 +161,27 @@ map_circle <- map +
   geom_path(data = points_table, aes(x=x, y=y), colour = "white", linewidth = 0.2) +
   geom_path(data = points_table2, aes(x=x, y=y), colour = "white", linewidth = 0.2, alpha = 0.5) +
   geom_path(data = points_table_pole, aes(x=x, y=y), colour = "white", linewidth = 2) +
+  annotation_raster(logo, xmin = 408100, xmax = 503400, ymin = -345900, ymax = -204900) +
   labs(
     title = "The Lunar South Pole",
-    subtitle = "Day 8: Utopia",
-    caption = "Roxanne Vuijk\n NASA LRO/LOLA\nBarker et al. 2023\n #30DayMapChallenge2026"
+    subtitle = "8 November Utopia",
+    caption = "Author:\nRoxanne Vuijk\n
+    \nSources:\nNASA LRO/LOLA\nBarker et al. 2023\n
+    \n#30DayMapChallenge2026"
     ) +
   theme(
     plot.title = element_text(face = "bold"), 
-    plot.caption.position = "plot",)
+    plot.caption.position = "plot",
+    legend.justification = "top",
+    plot.margin = margin(t = 10, r = 10, b = 120, l = 10))
 
 map_circle
+
+ggsave(
+  filename = "8Nov_Utopia/map.png",
+  plot = map_circle,
+  width = 10,
+  height = 10,
+  dpi = 300,
+  bg = "black"
+)
