@@ -119,6 +119,6 @@ map
 map_circle <- map + 
   new_scale_fill() +
   geom_raster(data = elevation_raster_circle, aes(x = x, y = y, fill = elevation)) + 
-  scale_fill_gradient2(low = "#D03D01", mid = "#E6D5B7", high = "#416B66", midpoint = 0, name = "Elevation (m)\nrelative to mean radius", breaks = seq(-7200, 7200, 7200), limits = c(-7200, 7200))
+  scale_fill_gradient2(low = "#554846", mid = "#A5AEB7", high = "#C8E0F4", midpoint = 0, name = "Elevation (m)\nrelative to mean radius", breaks = seq(-7200, 7200, 7200), limits = c(-7200, 7200))
 
 map_circle
