@@ -1,0 +1,1 @@
+Map Description: The map shows the dedicated bicycle networks, along with the streets which hold a probability for cycling, which include the residential streets. 

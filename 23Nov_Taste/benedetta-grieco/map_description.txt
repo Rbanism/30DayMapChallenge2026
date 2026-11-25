@@ -1,0 +1,11 @@
+The wineries of Campania
+ 
+This map showcases the region's wines and wineries. It is based on three Google Maps lists (DOC, DOCG and IGT Campania), which were created over time by two wine enthusiasts who collected wineries they discovered and grouped them by designation on personal maps. This is a personal selection, not a census of regional production.
+ 
+Each wine has been geolocated and classified as white or red according to the grape variety. The main map shows where white and red wines are produced: yellow and red clouds over a grey relief with contour lines. This allows you to see how the production of wine is distributed across the landscape, from the volcanic islands and the coast to the Apennine hills. Around the region, a label for each province reports the prevailing colour and its share.
+ 
+Three small maps on the right show where DOC, DOCG and IGT wines are concentrated, and a chart compares the number of white and red wines in each 100-metre altitude band.
+ 
+Please note that altitude refers to the location of the winery, not its vineyards. Wineries listed without a specific wine were counted as producing both white and red wines.
+
+Benedetta Grieco

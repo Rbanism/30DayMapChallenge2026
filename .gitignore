@@ -1,0 +1,11 @@
+# R session artefacts
+.Rhistory
+.RData
+.Rproj.user/
+Rplots.pdf
+
+# 180 MB NASA DEM downloaded by 8Nov_Utopia/roxanne-vuijk/map.R
+8Nov_Utopia/*/raw/
+
+# keep the raw email submissions exactly as received
+!/raw/**

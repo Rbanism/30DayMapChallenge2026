@@ -1,0 +1,7 @@
+This is my second map created using R, and it is one of my first experiences of programming. While I can read and understand code, I am not yet able to write it myself, so I used an AI assistant (Claude) to generate the code for me. My role was to define the idea, data, and design choices; run and test each step; read the errors; and ask for changes until the map matched my vision.
+ 
+The process: First, I exported the wine lists from Google Maps and rebuilt them as a table. Then, I geocoded the wineries with Tidygeocoder (ArcGIS), correcting misplaced points by hand. I classified each wine as white or red based on its grape varieties, extracted altitude data from a DEM (Elevatr) and created the map using sf, terra, Tidyterra, ggplot2 and Patchwork.
+ 
+The key takeaway is that places saved on a phone over the years can become a dataset that tells the story of a territory. Having used QGIS before, I found that every step is recorded in R, so the map can be recreated at any time. Building the map layer by layer showed me how much each design choice shapes what a map says.
+
+Benedetta Grieco

@@ -1,0 +1,65 @@
+#install and load packages
+
+# install.packages("maptiles")
+library(sf)
+library(ggplot2)
+library(ggspatial)
+library(png)
+library(maptiles)
+library(tidyterra)
+library(cowplot)
+library(magick)
+
+#load files
+
+noise_data <- read_sf("data/raw_data/noise_data_day/noise_data_day.shp")
+study_area <- read_sf("data/raw_data/park_area/park_area.shp")
+
+#fix geometries
+
+noise_data <- st_make_valid(noise_data)
+study_area <- st_make_valid(study_area)
+
+#clip noise polygons to study area
+
+study_area_noise <- st_intersection(noise_data, study_area)
+
+# prep basemap 
+study_buffer <- st_buffer(st_as_sfc(st_bbox(study_area_noise)), dist = 500)
+basemap <- get_tiles(study_buffer, provider = "Esri.WorldGrayCanvas", zoom = 13, crop = TRUE)
+
+#plot
+
+p <- ggplot() +
+  geom_spatraster_rgb(data = basemap) +
+  geom_sf(data = study_area_noise, aes(fill = category), color = NA) +
+  scale_fill_viridis_d(option = "magma", name = "Noise level (dB)", 
+  labels = c(
+   "Lden4549" = "45-49",
+   "Lden5054" = "50-54",
+   "Lden5559" = "55-59",
+   "Lden6064" = "60-64",
+   "Lden6569" = "65-69",
+   "Lden7074" = "70-74",
+   "LdenGreaterThan75" = ">75"
+   )
+  ) +
+    annotation_scale(location = "br", width_hint = 0.3
+  ) +
+  annotation_north_arrow(
+    location = "tl",
+    which_north = "true",
+    style = north_arrow_fancy_orienteering()
+  )+
+  theme_void()+
+  labs(
+    title = "Noise Levels along the Pediaios Linear Park, Nicosia, Cyprus",
+    subtitle = " #30daymapchallenge | Day 10: Sound | By Alex Pieri & Charis Spanos"
+  )+
+  theme(
+    plot.title = element_text(face = "bold", size = 12),
+    plot.subtitle = element_text(face = "plain", size = 9)
+  )
+
+ggdraw(p) +
+  draw_image("data/clean_data/Logo_Blue.png", x = 0.75, y = -0.35, width = 0.08, hjust = 0, vjust = 0)

@@ -1,0 +1,4 @@
+The process was fascinating, where I initially explored different flat surface projections of the globe. 
+While gathering and modifying spatial data was relatively simpler than my first map (Day 02:lines), it was challenging to get the plot accurate.
+I learned how to work with spatial data packages, and image files. For writing the code, refereing to the previous year examples was helpful to understand the syntax. I used Ai to understand specific functions, symbols and commands. Collectively these two helped me write the full code and generate the final output. 
+Overall, I enjoyed the process of research, plotting and generating the map.  

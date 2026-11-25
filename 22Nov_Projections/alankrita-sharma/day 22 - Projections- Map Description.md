@@ -1,0 +1,4 @@
+Here, the world map is shown in a Lambert Azimuthal Equal-Area Projection. 
+The Lambert azimuthal equal-area projection maintains land features at their true relative sizes while simultaneously maintaining a true sense of direction from the center. The world is projected onto a flat surface from any point on the globe (here, north pole). 
+Although all aspects are possible (equatorial, polar, and oblique), the one used most commonly is the polar aspect. This projection is best suited for individual land masses that are symmetrically proportioned, either round or square. 
+(Projetion description from: https://doc.esri.com/en/arcgis-pro/latest/help/mapping/properties/lambert-azimuthal-equal-area.html)
