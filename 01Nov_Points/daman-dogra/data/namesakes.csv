@@ -1,0 +1,44 @@
+name,country,lon,lat,dutch_origin,origin_lon,origin_lat,type,source_url
+Brooklyn,United States,-73.95,40.65,Breukelen,5.0017,52.1717,city,https://en.wikipedia.org/wiki/Brooklyn
+Harlem,United States,-73.9483,40.8089,Haarlem,4.6356,52.3814,city,https://en.wikipedia.org/wiki/Harlem
+Flushing,United States,-73.805,40.765,Vlissingen,3.5667,51.45,city,"https://en.wikipedia.org/wiki/Flushing,_Queens"
+New Utrecht,United States,-74.0033,40.61,Utrecht,5.1217,52.0908,city,"https://en.wikipedia.org/wiki/New_Utrecht,_Brooklyn"
+"Amsterdam, NY",United States,-74.1833,42.95,Amsterdam,4.8936,52.3728,city,"https://en.wikipedia.org/wiki/Amsterdam,_New_York"
+"Rotterdam, NY",United States,-73.9708,42.7867,Rotterdam,4.48,51.92,city,"https://en.wikipedia.org/wiki/Rotterdam,_New_York"
+"Amsterdam, MO",United States,-94.5892,38.3494,Amsterdam,4.8936,52.3728,city,"https://en.wikipedia.org/wiki/Amsterdam,_Missouri"
+"Breda, IA",United States,-94.975,42.1839,Breda,4.7758,51.5889,city,"https://en.wikipedia.org/wiki/Breda,_Iowa"
+"Harlingen, TX",United States,-97.7,26.2,Harlingen,5.4167,53.1833,city,"https://en.wikipedia.org/wiki/Harlingen,_Texas"
+"Zeeland, MI",United States,-86.0186,42.8125,Zeeland,3.75,51.5667,city,"https://en.wikipedia.org/wiki/Zeeland,_Michigan"
+"Zeeland, ND",United States,-99.8324,45.9729,Zeeland,3.75,51.5667,city,"https://en.wikipedia.org/wiki/Zeeland,_North_Dakota"
+"Zutphen, MI",United States,-85.8817,42.8256,Zutphen,6.195,52.14,city,https://www.wikidata.org/wiki/Q108613696
+"Oostburg, WI",United States,-87.7978,43.6242,Oostburg,3.4931,51.3264,city,"https://en.wikipedia.org/wiki/Oostburg,_Wisconsin"
+"New Almelo, KS",United States,-100.1178,39.5942,Almelo,6.6667,52.35,city,"https://en.wikipedia.org/wiki/New_Almelo,_Kansas"
+"South Holland, IL",United States,-87.6,41.6,South Holland,4.6667,52,city,"https://en.wikipedia.org/wiki/South_Holland,_Illinois"
+"Holland, IN",United States,-87.0383,38.2464,Holland,4.667,52.25,city,"https://en.wikipedia.org/wiki/Holland,_Indiana"
+"Friesland, WI",United States,-89.0678,43.5889,Friesland,5.8,53.2014,city,"https://en.wikipedia.org/wiki/Friesland,_Wisconsin"
+"Overisel, MI",United States,-85.9631,42.7183,Overijssel,6.5,52.5,city,"https://en.wikipedia.org/wiki/Overisel_Township,_Michigan"
+"Vriesland, MI",United States,-85.9403,42.812,Friesland,5.8,53.2014,city,"https://en.wikipedia.org/wiki/Zeeland_Charter_Township,_Michigan"
+"Drenthe, MI",United States,-85.94,42.7828,Drenthe,6.5833,52.9167,city,"https://en.wikipedia.org/wiki/Zeeland_Charter_Township,_Michigan"
+"Borculo, MI",United States,-86.0212,42.885,Borculo,6.5167,52.1167,city,"https://en.wikipedia.org/wiki/Blendon_Township,_Michigan"
+Couverden Island,United States,-135.0753,58.2003,Coevorden,6.75,52.6667,island,https://en.wikipedia.org/wiki/Couverden_Island
+"Amsterdam, SK",Canada,-102.448,51.627,Amsterdam,4.8936,52.3728,city,"https://en.wikipedia.org/wiki/Amsterdam,_Saskatchewan"
+Flushing,United Kingdom,-5.0689,50.1651,Vlissingen,3.5667,51.45,city,https://www.wikidata.org/wiki/Q5462909
+New Zealand,New Zealand,173,-42,Zeeland,3.75,51.5667,country,https://en.wikipedia.org/wiki/New_Zealand
+New Holland,Australia,134.3548,-25.6101,Holland,4.667,52.25,country,https://www.wikidata.org/wiki/Q2074145
+Gorée,Senegal,-17.3983,14.6669,Goeree,4.1667,51.75,island,https://en.wikipedia.org/wiki/Gorée
+Cape Horn,Chile,-67.2892,-55.98,Hoorn,5.0667,52.65,island,https://en.wikipedia.org/wiki/Cape_Horn
+Amsterdamøya,Norway,10.5,79.6667,Amsterdam,4.8936,52.3728,island,https://www.wikidata.org/wiki/Q478785
+Ny-Friesland,Norway,17,79,Friesland,5.8,53.2014,region,https://en.wikipedia.org/wiki/Ny-Friesland
+Witmarsum,Brazil,-49.7958,-26.9278,Witmarsum,5.4672,53.1019,city,https://www.wikidata.org/wiki/Q1000671
+Delft Island,Sri Lanka,79.6833,9.5167,Delft,4.3592,52.0117,island,https://en.wikipedia.org/wiki/Neduntheevu
+New Amsterdam,Guyana,-57.5167,6.25,Amsterdam,4.8936,52.3728,city,https://www.wikidata.org/wiki/Q923811
+Nieuw Amsterdam,Suriname,-55.0833,5.8833,Amsterdam,4.8936,52.3728,city,https://www.wikidata.org/wiki/Q762619
+Groningen,Suriname,-55.4667,5.8,Groningen,6.5675,53.2189,city,"https://en.wikipedia.org/wiki/Groningen,_Suriname"
+Utrecht,South Africa,30.33,-27.66,Utrecht,5.1217,52.0908,city,"https://en.wikipedia.org/wiki/Utrecht,_South_Africa"
+Amersfoort,South Africa,29.8711,-27.0078,Amersfoort,5.3833,52.15,city,"https://en.wikipedia.org/wiki/Amersfoort,_Mpumalanga"
+Dordrecht,South Africa,27.05,-31.3667,Dordrecht,4.6783,51.7958,city,"https://en.wikipedia.org/wiki/Dordrecht,_South_Africa"
+Ermelo,South Africa,29.9833,-26.5333,Ermelo,5.6167,52.3,city,"https://en.wikipedia.org/wiki/Ermelo,_South_Africa"
+Amsterdam,South Africa,30.667,-26.617,Amsterdam,4.8936,52.3728,city,"https://en.wikipedia.org/wiki/Amsterdam,_South_Africa"
+Hoorn Islands,France,-178.1497,-14.2825,Hoorn,5.0667,52.65,island,https://en.wikipedia.org/wiki/Hoorn_Islands
+'Eua (Middelburg Is.),Tonga,-174.9339,-21.3875,Middelburg,3.6167,51.5,island,https://en.wikipedia.org/wiki/ʻEua
+Nomuka (Rotterdam Is.),Tonga,-174.8,-20.25,Rotterdam,4.48,51.92,island,https://en.wikipedia.org/wiki/Nomuka
