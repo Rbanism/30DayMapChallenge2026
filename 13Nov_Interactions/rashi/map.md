@@ -1,6 +1,0 @@
-THE WORLD IN MOTION: Mapping Global Migration Networks
-
-This map visualises the strongest migration connections across the world from the year of 2024, using data from the United Nations Department of Economic and Social Affairs (UN DESA), International Migrant Stock 2024 data. It explores how people are distributed across national boundaries and how countries are interconnected through migration.
-The map approaches the theme of Interaction through the lens of international migration, understanding how people move across the countries and borders. The interaction is through the people, culture, knowledge, societies and even everyday practices. The migration in itself is an interconnected network that continue to influence and transform each society – the origin and the destination, both. 
-In the map, each line’s colour shows the origin country (as per the continent) leading to the destination country and its thickness corresponds to the number of migrations; these both helps visualise a broader pattern within the global network. This also represents concentrations and uneven distribution of the network in different parts of the world. 
-The map aims to communicate the scale, direction and interconnected nature of international migration through a single global visualisation.
