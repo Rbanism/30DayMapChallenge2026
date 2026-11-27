@@ -1,5 +1,3 @@
-# install.packages("maps")
-# install.packages("ggplot2")
 
 library(sf)
 library(ggplot2)
