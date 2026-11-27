@@ -1,6 +1,6 @@
-# 28Nov_Taste: Spatial Sentiment Analysis per Topics in Tehran, 2022-2026.
+# 28Nov_Feeling: Spatial Sentiment Analysis per Topics in Tehran, 2022-2026.
 
-![Map](Nov23_Tastes.png)
+![Map](Nov28_Feeling_Map.png)
 
 **Mapper:** Soroush Saffarzadeh\
 **Data:** 4TU.ResearchData, originated from X (formerly Twitter) (2026)
@@ -15,7 +15,6 @@ I already had the analyzed data as a csv format which is no published and access
 
 ## Files
 
-- [`Nov23rd_Tastes.R`](Nov23rd_Tastes.R): R code
-- [`Nov23_Tastes.png`](Nov23_Tastes.png): the map
+- [`Nov23rd_Tastes.R`](Nov28_Feeling_Script.R): R code
+- [`Nov23_Tastes.png`](Nov28_Feeling_Map.png): the map
 - [`Data/Saved/`](Data/Saved): saved food and coffee spots
-- Original text: [`day23_Tastes_Description.md`](day23_Tastes_Description.md)
